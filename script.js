@@ -17,6 +17,6 @@ let MoreBitsPerSecondCount = 0
 let MoreBitsPerClickPrice = 25
 let MoreBitsPerSecondPrice 50
 // other functions anauownouwnnn
-function BuyMoreBits() {
+function BuyMoreBitsPerClick() {
  
 }
