@@ -18,5 +18,12 @@ let MoreBitsPerClickPrice = 25
 let MoreBitsPerSecondPrice 50
 // other functions anauownouwnnn
 function BuyMoreBitsPerClick() {
- 
+ if (bits >= MoreBitsPerClickPrice || bits = MoreBitsPerClickPrice) {
+   bits -= MoreBitsPerClickPrice
+   document.getElementById("bitscount").innerText = bits;
+  
+  MoreBitsPerClickCount++
+
+  
+ }
 }
