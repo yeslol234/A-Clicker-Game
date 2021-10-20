@@ -5,14 +5,16 @@
   <link src="styles.css" rel="stylesheet" type="text/css" />
  </head>
 <body> 
-<script src="script.js"></script>
  <div id="page">
+   <!-- COMPONENTS START -->
   <button id="mainButton" onclick="increment()"> Make A Bit </button>
   <div id="info">
    <p>Total Bits: <span id="TotalBits" class="number">0</span></p>
    <p>Total Bits Per Click: <span id="TotalBitsPerClick" class="number">0</span></p>
    <p>Total Bits Per Second: <span id="TotalBitsPerSecond" class="number">0</span></p>
   </div>
+  <!-- COMPONENTS END -->
+  <!-- ITEMS START -->
   <div id="ItemsContainer">
     <div id="Item">
      <div id="TextContainer">
@@ -22,8 +24,11 @@
       <p></p>
      </div>
   </div>
+  <!-- ITEMS END -->
   </div>
  </div>
+
+ <script src="script.js"></script>
  </body>
 </html>
 

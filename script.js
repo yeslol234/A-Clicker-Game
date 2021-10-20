@@ -5,25 +5,33 @@ let bitsperclick = 1;
 // Functions
 function increment() {
  bits += bitsperclick
-  document.getElementById("bitscount").innerText = bits;
+ Update()
 }
 setInterval(function() {
  bits += bitspersecond
- document.getElementById("bitscount").innerText = bits;
+ Update()
 },1000)
+/**
+ * Updates The TotalBits Count
+ */
+function Update() {
+  document.getElementById("TotalBits").innerText = bits;
+}
 // Upgrades, Buildings, etc.
 let MoreBitsPerClickCount = 0
 let MoreBitsPerSecondCount = 0
 let MoreBitsPerClickPrice = 25
-let MoreBitsPerSecondPrice 50
-// other functions anauownouwnnn
+let MoreBitsPerSecondPrice = 50
+// Upgrade Functions
 function BuyMoreBitsPerClick() {
- if (bits >= MoreBitsPerClickPrice || bits = MoreBitsPerClickPrice) {
+ if (bits >= MoreBitsPerClickPrice || bits == MoreBitsPerClickPrice) {
    bits -= MoreBitsPerClickPrice
-   document.getElementById("bitscount").innerText = bits;
+   Update()
   
   MoreBitsPerClickCount++
 
-  
+  MoreBitsPerClickPrice *= 2
+
+  bitsperclick += 1
  }
 }
