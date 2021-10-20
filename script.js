@@ -5,16 +5,16 @@ let bitsperclick = 1;
 // Functions
 function increment() {
  bits += bitsperclick
- Update()
+ update()
 }
 setInterval(function() {
  bits += bitspersecond
- Update()
+ update()
 },1000)
 /**
  * Updates The TotalBits Count
  */
-function Update() {
+function update() {
   document.getElementById("TotalBits").innerText = bits;
 }
 // Upgrades, Buildings, etc.
@@ -26,7 +26,7 @@ let MoreBitsPerSecondPrice = 50
 function BuyMoreBitsPerClick() {
  if (bits >= MoreBitsPerClickPrice || bits == MoreBitsPerClickPrice) {
    bits -= MoreBitsPerClickPrice
-   Update()
+   update()
   
   MoreBitsPerClickCount++
 
