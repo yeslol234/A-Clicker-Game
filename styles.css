@@ -3,5 +3,5 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 button[id*="buy"] { /* Checks if id includes word "buy" */
-  /* place-holder */
+  background-color:green;
 }
